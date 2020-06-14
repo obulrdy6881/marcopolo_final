@@ -1,0 +1,251 @@
+// .headerContainer {
+//     display: block;
+//     position: absolute;
+//     width: 100%;
+//     z-index: 10001;
+//     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#403f41+0,403f41+100&0.7+0,0.42+66,0+100 */
+    
+//     background: -moz-linear-gradient(top, rgba(64, 63, 65, 0.7) 0%, rgba(64, 63, 65, 0.42) 66%, rgba(64, 63, 65, 0) 100%);
+//     /* FF3.6-15 */
+    
+//     background: -webkit-linear-gradient(top, rgba(64, 63, 65, 0.7) 0%, rgba(64, 63, 65, 0.42) 66%, rgba(64, 63, 65, 0) 100%);
+//     /* Chrome10-25,Safari5.1-6 */
+    
+//     background: linear-gradient(to bottom, rgba(64, 63, 65, 0.7) 0%, rgba(64, 63, 65, 0.42) 66%, rgba(64, 63, 65, 0) 100%);
+//     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+//     // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b3403f41', endColorstr='#00403f41', GradientType=0);
+//     /* IE6-9 */
+// }
+// .navContainer {
+//     display: block;
+//     float: right;
+//     margin-top: 30px;
+// }
+// .mainNavContainer {
+//     display: block;
+//     padding-top: 35px;
+// }
+// .logoWrap {
+//     display: block;
+//     margin-top: 20px;
+//     float: left;
+// }
+// .logoWrap img {
+//     display: block;
+//     width: 110%;
+// }
+// .navContainer {
+//     display: block;
+//     float: right;
+//     margin-top: 30px;
+// }
+// .mainNavContainer {
+//     display: block;
+//     padding-top: 35px;
+// }
+// .navWrap {
+//     background: #ffffff;
+//     float: right;
+//     padding: 0 20px;
+//     position: relative;
+//     clear: both;
+//     -webkit-transition: all ease 0.5s;
+//     -moz-transition: all ease 0.5s;
+//     -o-transition: all ease 0.5s;
+//     transition: all ease 0.5s;
+//     border-radius: 5px 0 0 5px;
+// }
+// .respNav {
+//     display: none;
+//     padding: 10px 5px 10px 30px;
+//     color: #000000;
+//     margin-left: 20px;
+//     line-height: 18px;
+//     font-size: 13px;
+//     // background: url('../images/respIcon.png') 0 center no-repeat;
+//     text-transform: uppercase;
+// }
+// .navWrap:before {
+//     border-bottom: 52px solid #353535;
+//     border-left: 50px solid transparent;
+//     content: "";
+//     height: 0;
+//     position: absolute;
+//     right: 100%;
+//     top: 0;
+//     width: 0;
+//     pointer-events: none;
+//     display: none;
+// }
+// .headContInfo p {
+//     font-size: 10px;
+// }
+// .fxNav > ul,
+// .navWrap > ul {
+//     display: inline-block;
+//     vertical-align: middle;
+//     -webkit-transition: all ease 0.5s;
+//     -moz-transition: all ease 0.5s;
+//     -o-transition: all ease 0.5s;
+//     transition: all ease 0.5s;
+// }
+// .fxNav > ul > li,
+// .navWrap > ul > li {
+//     float: left;
+//     display: block;
+//     position: relative;
+//     -webkit-transition: all ease 0.5s;
+//     -moz-transition: all ease 0.5s;
+//     -o-transition: all ease 0.5s;
+//     transition: all ease 0.5s;
+// }
+// .fxNav > ul > li > a,
+// .navWrap > ul > li > a {
+//     display: block;
+//     font-size: 14px;
+//     color: #0d0655;
+//     padding: 16px 20px 17px 20px;
+//     text-transform: uppercase;
+//     -webkit-transition: all ease 0.5s;
+//     -moz-transition: all ease 0.5s;
+//     -o-transition: all ease 0.5s;
+//     transition: all ease 0.5s;
+// }
+// .fxNav > ul > li:hover > a,
+// .navWrap > ul > li:hover > a {
+//     /* background: #2B2B2B; */
+//      color: #0d0655;
+//     ;
+// }
+// .fxNav > ul > li > ul,
+// .navWrap > ul > li > ul {
+//     display: block;
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     min-width: 180px;
+//     visibility: hidden;
+//     opacity: 0;
+//     z-index: 5;
+//     background: #ffffff;
+//     -webkit-transition: all ease 0.5s;
+//     transition: all ease 0.5s;
+//     border-bottom: 3px solid #0d0655;
+// }
+// .fxNav > ul > li > ul > li > a,
+// .navWrap > ul > li > ul > li > a {
+//     display: block;
+//     padding: 9px 12px;
+//     font-size: 13px;
+//     color: #0d0655;
+//     border-bottom: 1px solid #444;
+// }
+// .fxNav > ul > li > ul > li:last-child > a,
+// .navWrap > ul > li > ul > li:last-child > a {
+//     border-bottom: none;
+// }
+// .fxNav > ul > li > ul > li > a:hover,
+// .navWrap > ul > li > ul > li > a:hover {
+//     background: lightgrey;
+//     color: #000;
+// }
+// .fxNav > ul > li.active > a,
+// .navWrap > ul > li.active > a {
+//     color: #fff;
+// }
+// .fxNav > ul > li:hover > ul,
+// .navWrap > ul > li:hover > ul {
+//     visibility: visible;
+//     opacity: 1;
+// }
+// .fixedMenu {
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     float: none;
+//     padding: 0;
+//     left: 0;
+//     z-index: 5000;
+//     background: #ffffff;
+// }
+// .fixedMenu .navWrap:before,
+// .fixedMenu .navWrap:after {
+//     display: none;
+// }
+// .fixedMenu .fixCenterAlign {
+//     width: 1100px;
+//     margin: 0 auto;
+//     position: relative;
+// }
+// .fxdLogo {
+//     width: 150px;
+//     float: left;
+//     margin-top: 8px;
+//     margin-left: 10px;
+//     -webkit-transform: translateY(15px);
+//     transform: translateY(15px);
+//     opacity: 0;
+//     position: absolute;
+//     left: 0;
+//     visibility: hidden
+// }
+// .fxdLogo img {
+//     display: block;
+//     width: 100%;
+// }
+// .fixedMenu .fxdLogo {
+//     -webkit-transition: all ease 0.5s;
+//     -moz-transition: all ease 0.5s;
+//     -o-transition: all ease 0.5s;
+//     transition: all ease 0.5s;
+//     visibility: visible;
+//     -webkit-transform: translateY(0px);
+//     transform: translateY(0px);
+//     opacity: 1;
+// }
+// /*.fixedMenu .socialMedia{	margin-top:15px;	margin-left:15px;}.fixedMenu .navWrap > ul > li > a{	padding:22px 25px;}*/
+
+// .navWrap > ul > li.fixedLogo a {
+//     padding: 0;
+//     margin-top: 18px;
+//     margin-right: 25px;
+// }
+// .navWrap > ul > li.fixedLogo a img {
+//     width: 100%;
+//     display: block;
+// }
+// .fxHeader {
+//     background: #3f3e40;
+//     width: 100%;
+//     padding: 0 0;
+//     position: fixed;
+//     top: -150px;
+//     left: 0;
+//     z-index: 5;
+//     -webkit-transition: all ease 0.5s;
+//     -moz-transition: all ease 0.5s;
+//     -o-transition: all ease 0.5s;
+//     transition: all ease 0.5s;
+//     -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .3);
+//     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .3);
+// }
+// .fxHeader.active {
+//     top: 0;
+// }
+// .fxLogo {
+//     display: block;
+//     width: 150px;
+//     float: left;
+//     margin-top: 13px;
+// }
+// .fxNav {
+//     float: right;
+// }
+// .fxLogo img {
+//     display: block;
+//     width: 100%;
+// }
+// .fxNav > ul > li > a {
+//     padding: 22px 20px;
+// }

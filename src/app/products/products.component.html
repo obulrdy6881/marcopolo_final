@@ -1,0 +1,56 @@
+<app-header></app-header>
+<div class="container py-4">
+   
+    <div class="row justify-content-center">
+        <div class="col-md-5 my-3 tile cursor-pointer" >
+            <img src="/assets/images/ISO_9001.jpg" class="img-fluid" (click)="imagecarousel.show()">
+           
+            
+        </div>
+        <div class="col-md-5 my-3 tile cursor-pointer" >
+            <img src="/assets/images/Screen.png" class="img-fluid" (click)="imagecarousel1.show()">
+          
+            
+        </div>
+    </div>
+</div>
+<div mdbModal #imagecarousel="mdbModal" class="modal fade" tabindex="-1" role="dialog"
+    aria-labelledby="myBasicModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <mdb-carousel  [animation]="'slide'">
+                    <mdb-carousel-item >
+                        <img class="d-block w-100 img-fluid" src="/assets/images/ISO_9001.jpg"  alt="First slide">
+                      
+                    </mdb-carousel-item>
+
+                </mdb-carousel>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div mdbModal #imagecarousel1="mdbModal" class="modal fade" tabindex="-1" role="dialog"
+    aria-labelledby="myBasicModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <mdb-carousel  [animation]="'slide'">
+                    <mdb-carousel-item >
+                        <img class="d-block w-100 img-fluid" src="/assets/images/Screen.png"  alt="First slide">
+                      
+                    </mdb-carousel-item>
+                    <mdb-carousel-item >
+                        <img class="d-block w-100 img-fluid" src="/assets/images/Screenshot1.png"  alt="First slide">
+                      
+                    </mdb-carousel-item>
+                </mdb-carousel>
+            </div>
+
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+
+

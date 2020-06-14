@@ -1,0 +1,23 @@
+.tiles-images{
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    -webkit-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+    height: 340px;
+}
+.tiles-images:hover{
+    background-size: 105% 105%;
+}
+.text{
+    position: absolute;
+    bottom: 2px;
+    right: 20px;
+    font-size: large;
+}
+.text1{
+    position: absolute;
+    bottom: 2px;
+    left:  20px;
+    font-size: large;
+}

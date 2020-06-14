@@ -1,0 +1,94 @@
+<!-- <div class="dash"></div>
+<mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" [(opened)]="opened">
+        <mat-accordion>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Home
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Home</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        company
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p class="cursor-pointer">About company</p>
+                <p class="cursor-pointer">Company-Profile</p>
+                <p class="cursor-pointer">Certificaation</p>
+
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                       Tiles
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p class="cursor-pointer">Floor</p>
+                <p class="cursor-pointer">Wall</p>
+                <p class="cursor-pointer">Kitchen</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      Markert Products
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p class="cursor-pointer">Tiles</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                       News & Blog
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p class="cursor-pointer">News</p>
+                <p class="cursor-pointer">Blog</p>
+            </mat-expansion-panel>
+           
+        </mat-accordion>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <button type="button" (click)="opened=!opened" mdbBtn color="primary" mdbWavesEffect>
+            <mdb-icon fas icon="bars"></mdb-icon>
+        </button>
+        <div>
+            
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container> -->
+    <div class="row">
+        <div class="col-md-2">
+            <div _ngcontent-c1="" class="sidebar-fixed position-fixed"><a _ngcontent-c1=""
+                    class="logo-wrapper waves-effect"><img _ngcontent-c1="" alt="" class="img-fluid"
+                        src="../../../../assets/img/angular-mdb.png"></a>
+                <div  class="list-group list-group-flush"><a _ngcontent-c1=""
+                        class="list-group-item list-group-item-action waves-effect active" routerLink="/dashboard/company"
+                        routerlinkactive="active" ><i 
+                            class="fa fa-pie-chart mr-3"></i>Home
+                    </a><a _ngcontent-c1="" class="list-group-item list-group-item-action waves-effect"
+                        routerlink="profiles/profile1" routerlinkactive="active" href="/dashboard/company"><i
+                            _ngcontent-c1="" class="fa fa-user mr-3"></i>Company
+
+                    </a>
+                    <a _ngcontent-c1="" class="list-group-item list-group-item-action waves-effect"
+                        routerlink="tables/table1" routerlinkactive="active" href="/dashboard/company"><i _ngcontent-c1=""
+                            class="fa fa-table mr-3"></i>Products</a><a _ngcontent-c1=""
+                        class="list-group-item list-group-item-action waves-effect" routerlink="/dashboard/company"
+                        routerlinkactive="active" href="/maps/map1"><i _ngcontent-c1="" class="fa fa-map mr-3"></i>News
+                        & Blog</a><a _ngcontent-c1="" class="list-group-item list-group-item-action waves-effect"
+                        routerlink="nonExistingPath" routerlinkactive="active" href="/nonExistingPath"><i
+                            _ngcontent-c1="" class="fa fa-exclamation mr-3"></i>404</a></div>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <main class="mx-lg-5">
+                    <router-outlet></router-outlet>
+                                    
+            </main>
+        </div>
+    </div>
+

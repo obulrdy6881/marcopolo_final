@@ -1,0 +1,22 @@
+
+.morco-polo{
+    margin-bottom: 24%;
+    text-shadow: 2px 2px 1px black;
+
+}
+::ng-deep  .carousel-control-prev-icon {
+    background-image: url("/assets/images/left.png") ;
+
+}
+
+::ng-deep .carousel-control-next-icon {
+    background-image: url("/assets/images/right.png");
+}
+.carousel-1{
+    margin-top: 7%;
+}
+@media only screen and (max-width: 500px) {
+    .carousel-1{
+        margin-top: 25%;
+    }
+}

@@ -1,0 +1,48 @@
+
+
+
+<section class="homeAboutSec py-4" style="text-align: center;display: flex;
+    justify-content: center;">
+
+        <div style="width:40%;">
+            <div>
+                <h2>TILES CALCULATOR</h2>
+            </div>
+            <br>
+            <br>
+            <div style="display: flex;">
+                <input mdbInput type="number" class="form-control" [(ngModel)]="myInput" placeholder="Enter Square Merte">
+                <!-- <input type="number" class="form-control-m"  [(ngModel)]="myInput" placeholder="Enter Square Merte"> -->
+                <select id="typeOfTile" class="form-control" [(ngModel)]="size">
+                    <option value="" selected>Tile Type</option>
+                    <option value="8">30*60</option>
+                    <option value="4">60*60 </option>
+                    <option value="14">26*40</option>
+                </select>
+            </div>
+            <div class="text-center">
+                <br>
+                <p>A box have <span id="numberOfTailesEachBox">{{typeOfTile}}</span> Tiles</p>
+            </div>
+            <br>
+            <div class="text-center">
+                <button (click)="calculateTailsBox()" class="btn btn-primary"
+                    style="width: 150px; cursor: pointer;">SUBMIT</button>
+            </div>
+            <br>
+            <div style="display: flex;justify-content: center;">
+                <h3 style="margin-right: 100px;">Number of boxes : <span id="NumberOfBoxes">{{finalboxes}}</span></h3>
+                <h3>Number of tiles : <span id="NumberOfTiles">{{totaltiles}}</span></h3>
+            </div>
+
+
+        </div>
+
+
+      
+
+    </section>
+
+
+
+<app-footer></app-footer>

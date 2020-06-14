@@ -1,0 +1,50 @@
+
+.dropdown-menu {
+   width: 190px;
+  }
+  ::ng-deep .dropdown-content a:hover {
+    background-color: black !important;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  ::ng-deep .top-nav-collapse {
+    background-color: white !important;
+    .nav-item .nav-link {
+      color: black !important;
+    
+    }
+  }
+  ::ng-deep .navbar:not(.top-nav-collapse) {
+    background: black !important;
+    
+
+  }
+  ::ng-deep .navbar-expand-lg .navbar-nav {
+  
+ margin-left: 150px !important;
+  }
+  
+  .navbar-nav>.active>a{
+    color: black !important;
+    background-color: lightgrey !important;
+  }
+  .nav-item>a:hover {
+    //color: rgba(255, 152, 0, 0.7) !important;
+    color:#FF8800 !important;
+  }
+  
+  .nav-item .nav-link {
+    color:black;
+    font-weight: 700;
+    font-family:'Open Sans', sans-serif;
+
+  }
+  .activeNavLink{
+      //background-color: blue;
+      border: 1px solid #FF8800 ;
+      
+  }
+ ::ng-deep .navbar.navbar-dark .navbar-toggler-icon {
+    margin-left: 150px;
+}

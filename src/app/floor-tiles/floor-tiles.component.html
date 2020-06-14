@@ -1,0 +1,102 @@
+<div class="wonderful"></div>
+
+<div class=" py-5">
+    <div class="container">
+        <p class="h1 text-center">FLOOR TILES </p>
+        
+       
+
+        <div class="container py-3">
+            <p class="text-center h2"></p>
+            <div class="row">
+                <div class="col-md-4 my-3 tile" *ngFor="let item of floor">
+                    <img src={{item.name}} class="img-fluid cursor-pointer" (click)="openImages(item);imagecarousel.show()">
+                    <p class="text1">click Here</p>
+                    <p class="text">{{item.num}}</p>
+                </div>
+            </div>
+        </div>
+       
+        <div class="container py-3">
+            <p class="text-center h2">POLISHED PORCELAIN</p>
+            <div class="row">
+                <div class="col-md-4 my-3 tile" *ngFor="let item of polished">
+                    <img src={{item.name}} class="img-fluid cursor-pointer" (click)="openImages(item);imagecarousel.show()">
+                    <p class="text1">click Here</p>
+                    <p class="text">{{item.num}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="container py-3">
+            <p class="text-center h2">GLAZED PORCELAIN</p>
+            <div class="row">
+                <div class="col-md-4 my-3 tile" *ngFor="let item of glazed">
+                    <img src={{item.name}} class="img-fluid cursor-pointer"(click)="openImages(item);imagecarousel.show()">
+                    <p class="text1">click Here</p>
+                    <p class="text">{{item.num}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="container py-3">
+            <p class="text-center h2">MATT PORCELAIN</p>
+            <div class="row">
+                <div class="col-md-4 my-3 tile" *ngFor="let item of matt">
+                    <img src={{item.name}} class="img-fluid cursor-pointer"(click)="openImages(item);imagecarousel.show()">
+                    <p class="text1">click Here
+                    </p>
+                    <p class="text">{{item.num}}</p>
+                </div>
+            </div>
+        </div> 
+
+           </div>
+</div>
+<div class="parallax justify-contant-center">
+    <div class="container py-3 justify-contant-center">
+        <p class="h2 text-center text-white ">REASONS TO CHOOSE<br>
+            MARCOPOLO TILES FOR YOUR NEXT PROJECT</p>
+            <div class="row ">
+                <div class="col-md-3 text-center ">
+                    <img src="assets/images/resistwear.png" class="img-fluid pt-4" width="350px">
+                    <p class="h6 text-white">Resist Wear</p>
+
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="assets/images/traffic.png" class="img-fluid" width="150px">
+                    <p class="h6 text-white">Best for High traffic Areas</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="assets/images/icon3.png" class="img-fluid" width="150px">
+                    <p class="h6 text-white">Wide Range of Styles</p>
+
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="assets/images/water_ressistence.png" class="img-fluid" width="150px">
+                    <p class="h6 text-white">Moisture Resistence</p>
+
+                </div>
+            </div>
+    </div>
+</div>
+<app-footer></app-footer>
+
+<div mdbModal #imagecarousel="mdbModal" class="modal fade" tabindex="-1" role="dialog"
+    aria-labelledby="myBasicModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <mdb-carousel  [animation]="'slide'">
+                    <mdb-carousel-item *ngFor="let item of showImages">
+                        <img class="d-block w-100" src={{item.name}} alt="First slide">
+                        <p class="text">{{item.num}}</p>
+                    </mdb-carousel-item>
+                </mdb-carousel>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+

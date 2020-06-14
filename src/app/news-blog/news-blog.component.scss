@@ -1,0 +1,28 @@
+.adobe{
+    font-size: 32px;
+    font-weight: normal;
+}
+.vl{
+    border-left: 1px solid black;
+  height: 230px;
+}
+.ulist{
+    list-style-type: none;
+    padding-left: 0;
+}
+.news-list{
+    background-color:  #FAFAFA;;
+}
+.products{
+    background-color: #FAFAFA;
+}
+.differ{
+    background-color:#323232;
+    color:#a6a6a6;
+}
+
+::ng-deep{
+.carousel{
+    margin-top:108px !important;
+}
+}
