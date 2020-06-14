@@ -16,30 +16,33 @@ import { ProductsComponent } from './products/products.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FloorTilesComponent } from './floor-tiles/floor-tiles.component';
 import { BlogTwoComponent } from './blog-two/blog-two.component';
+import { ProductDescriptionComponent } from './product-description/product-description.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
-      {path:"",component:AppComponent,
-      children:[
-       {path: "", component: HomePageComponent},
-       {path:"company",component:CompanyPageComponent},
-      {path:"contact",component:ContactusPageComponent},
-      {path:"calculator",component:CalculatorPageComponent},
-      {path:"tiles-page",component:TilesPageComponent},
-      {path:"news",component:NewsBlogComponent},
-      {path:"blog",component:BlogComponent},
-      {path:"hh",component:HeaderComponent},
-      {path:"types",component:TypesPageComponent},
-      {path:"ceo-message",component:CeoMessageComponent},
-      {path:"products",component:ProductsComponent},
-      {path:"gallery",component:GalleryComponent},
-      {path:"floor-tiles",component:FloorTilesComponent},
-      {path:"blog-two",component:BlogTwoComponent}
-    
-]
+  {
+    path: "", component: AppComponent,
+    children: [
+      { path: "", component: HomePageComponent },
+      { path: "company", component: CompanyPageComponent },
+      { path: "contact", component: ContactusPageComponent },
+      { path: "calculator", component: CalculatorPageComponent },
+      { path: "tiles-page", component: TilesPageComponent },
+      { path: "news", component: NewsBlogComponent },
+      { path: "blog", component: BlogComponent },
+      { path: "hh", component: HeaderComponent },
+      { path: "types", component: TypesPageComponent },
+      { path: "ceo-message", component: CeoMessageComponent },
+      { path: "products", component: ProductsComponent },
+      { path: "gallery", component: GalleryComponent },
+      { path: "floor-tiles", component: FloorTilesComponent },
+      { path: "blog-two", component: BlogTwoComponent },
+      { path: "product-description", component: ProductDescriptionComponent }
+
+    ]
   }
- 
+
 
 ]
 @NgModule({

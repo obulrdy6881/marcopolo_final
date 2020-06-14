@@ -111,6 +111,7 @@ import { DashBoardModule } from './dash-board/dash-board.module';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FloorTilesComponent } from './floor-tiles/floor-tiles.component';
 import { BlogTwoComponent } from './blog-two/blog-two.component';
+import { ProductDescriptionComponent } from './product-description/product-description.component';
 
 
 @NgModule({
@@ -132,6 +133,7 @@ import { BlogTwoComponent } from './blog-two/blog-two.component';
     GalleryComponent,
     FloorTilesComponent,
     BlogTwoComponent,
+    ProductDescriptionComponent,
 
 
 
