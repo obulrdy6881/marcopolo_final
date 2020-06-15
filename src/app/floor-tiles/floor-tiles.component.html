@@ -10,7 +10,7 @@
             <p class="text-center h2"></p>
             <div class="row">
                 <div class="col-md-4 my-3 tile" *ngFor="let item of floor">
-                    <img src={{item.name}} class="img-fluid cursor-pointer" (click)="openImages(item);imagecarousel.show()">
+                    <img src={{item.name}} class="img-fluid cursor-pointer" (click)="openImages(item)">
                     <p class="text1">click Here</p>
                     <p class="text">{{item.num}}</p>
                 </div>
@@ -21,7 +21,7 @@
             <p class="text-center h2">POLISHED PORCELAIN</p>
             <div class="row">
                 <div class="col-md-4 my-3 tile" *ngFor="let item of polished">
-                    <img src={{item.name}} class="img-fluid cursor-pointer" (click)="openImages(item);imagecarousel.show()">
+                    <img src={{item.name}} class="img-fluid cursor-pointer" (click)="openImages(item)">
                     <p class="text1">click Here</p>
                     <p class="text">{{item.num}}</p>
                 </div>
@@ -31,7 +31,7 @@
             <p class="text-center h2">GLAZED PORCELAIN</p>
             <div class="row">
                 <div class="col-md-4 my-3 tile" *ngFor="let item of glazed">
-                    <img src={{item.name}} class="img-fluid cursor-pointer"(click)="openImages(item);imagecarousel.show()">
+                    <img src={{item.name}} class="img-fluid cursor-pointer"(click)="openImages(item)">
                     <p class="text1">click Here</p>
                     <p class="text">{{item.num}}</p>
                 </div>
@@ -41,7 +41,7 @@
             <p class="text-center h2">MATT PORCELAIN</p>
             <div class="row">
                 <div class="col-md-4 my-3 tile" *ngFor="let item of matt">
-                    <img src={{item.name}} class="img-fluid cursor-pointer"(click)="openImages(item);imagecarousel.show()">
+                    <img src={{item.name}} class="img-fluid cursor-pointer"(click)="openImages(item)">
                     <p class="text1">click Here
                     </p>
                     <p class="text">{{item.num}}</p>
@@ -79,7 +79,7 @@
     </div>
 </div>
 <app-footer></app-footer>
-
+<!-- 
 <div mdbModal #imagecarousel="mdbModal" class="modal fade" tabindex="-1" role="dialog"
     aria-labelledby="myBasicModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-md" role="document">
@@ -95,7 +95,7 @@
 
         </div>
     </div>
-</div>
+</div> -->
 
 
 

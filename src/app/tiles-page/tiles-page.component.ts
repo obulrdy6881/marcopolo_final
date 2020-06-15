@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class TilesPageComponent implements OnInit {
   pictures: {}[];
   floor: {}[];
-  polished:{} [];
-  glazed: { }[];
-  matt: { }[];
+  polished: {}[];
+  glazed: {}[];
+  matt: {}[];
   showImages = [];
   showImages1: [];
 
@@ -198,7 +198,7 @@ export class TilesPageComponent implements OnInit {
         num: "72003"
       }
       ]
-    },{
+    }, {
       name: "assets/tiles/72004.jpg",
       num: "72004",
       images: [{
@@ -276,62 +276,62 @@ export class TilesPageComponent implements OnInit {
       }
       ]
     },
-   
-    {
-        name: "assets/tiles/96007.jpg",
-        num: "96007",
-        images: [{
-          name: "assets/tiles/96007.jpg",
-          num: "96007"
-        },
-        {
-          name: "assets/tiles/96007_1.jpg",
-          num: "96007"
-        }
-        ]
 
+    {
+      name: "assets/tiles/96007.jpg",
+      num: "96007",
+      images: [{
+        name: "assets/tiles/96007.jpg",
+        num: "96007"
       },
       {
-        name: "assets/tiles/96016.jpg",
-        num: "96016",
-        images: [{
-          name: "assets/tiles/96016.jpg",
-          num: "96016"
-        },
-        {
-          name: "assets/tiles/96016_1.jpg",
-          num: "96016"
-        }
-        ]
-      },
-      {
-        name: "assets/tiles/96021.jpg",
-        num: "96021",
-        images: [{
-          name: "assets/tiles/96021.jpg",
-          num: "96021"
-        },
-        {
-          name: "assets/tiles/96021_1.jpg",
-          num: "96021"
-        }
-        ]
-      },
-      {
-        name: "assets/tiles/96036.jpg",
-        num: "96036",
-        images: [{
-          name: "assets/tiles/96036.jpg",
-          num: "96036"
-        },
-        {
-          name: "assets/tiles/96036_1.jpg",
-          num: "96036"
-        }
-        ]
+        name: "assets/tiles/96007_1.jpg",
+        num: "96007"
       }
+      ]
+
+    },
+    {
+      name: "assets/tiles/96016.jpg",
+      num: "96016",
+      images: [{
+        name: "assets/tiles/96016.jpg",
+        num: "96016"
+      },
+      {
+        name: "assets/tiles/96016_1.jpg",
+        num: "96016"
+      }
+      ]
+    },
+    {
+      name: "assets/tiles/96021.jpg",
+      num: "96021",
+      images: [{
+        name: "assets/tiles/96021.jpg",
+        num: "96021"
+      },
+      {
+        name: "assets/tiles/96021_1.jpg",
+        num: "96021"
+      }
+      ]
+    },
+    {
+      name: "assets/tiles/96036.jpg",
+      num: "96036",
+      images: [{
+        name: "assets/tiles/96036.jpg",
+        num: "96036"
+      },
+      {
+        name: "assets/tiles/96036_1.jpg",
+        num: "96036"
+      }
+      ]
+    }
     ],
-    this.floor = [{
+      this.floor = [{
         name: "assets/tiles/96036.jpg",
         num: "#6036",
         images: [{
@@ -387,157 +387,157 @@ export class TilesPageComponent implements OnInit {
       {
         name: "assets/tiles/6123.jpg",
         num: "#6123",
-       images:[{
-        name: "assets/tiles/6123_imagetiles.jpg",
-        num: "#6123"
-       },
-      {
-        name: "assets/tiles/6123_imagetiles.jpg",
-        num: "#6123"
-      }]
+        images: [{
+          name: "assets/tiles/6123_imagetiles.jpg",
+          num: "#6123"
+        },
+        {
+          name: "assets/tiles/6123_imagetiles.jpg",
+          num: "#6123"
+        }]
       },
       {
         name: "assets/tiles/6817.jpg",
         num: "#6817",
-        images:[{
+        images: [{
           name: "assets/tiles/6817_img.jpg",
           num: "#6187"
-         },
-         {
+        },
+        {
           name: "assets/tiles/6817_img.jpg",
           num: "#6187"
-         }
+        }
         ]
       },
       {
         name: "assets/tiles/6902.jpg",
         num: "#6902",
-        images:[{
+        images: [{
           name: "assets/tiles/6902_img.jpg",
           num: "#6902"
-         },
-         {
+        },
+        {
           name: "assets/tiles/6902_img.jpg",
           num: "#6902"
-         }
+        }
         ]
       },
       {
         name: "assets/tiles/6906.jpg",
         num: "#6906",
-        images:[{
+        images: [{
           name: "assets/tiles/6906_imgtiles.jpg",
           num: "#6906"
-         },
-         {
+        },
+        {
           name: "assets/tiles/6906_imgtiles.jpg",
           num: "#6906"
-         }
+        }
         ]
       }
       ],
       this.glazed = [{
         name: "assets/tiles/72002.jpg",
         num: "#72002",
-        images:[{
+        images: [{
           name: "assets/tiles/72002_tileimage.jpg",
           num: "#72002"
-         },
-         {
+        },
+        {
           name: "assets/tiles/72002_tileimage.jpg",
           num: "#72002"
-         }
+        }
         ]
 
-        
-        
+
+
       },
       {
         name: "assets/tiles/72003.jpg",
         num: "#72003",
-        images:[{
+        images: [{
           name: "assets/tiles/72003_tileimage.jpg",
           num: "#72003"
-         },
-         {
+        },
+        {
           name: "assets/tiles/72003_tileimage.jpg",
           num: "#72003"
-         }
+        }
         ]
-        
+
       },
       {
         name: "assets/tiles/72004.jpg",
         num: "#72004",
-        images:[{
+        images: [{
           name: "assets/tiles/72004img.jpg",
           num: "#72004"
-         },
-         {
+        },
+        {
           name: "assets/tiles/72004img.jpg",
           num: "#72004"
-         }
+        }
         ]
       },
       {
         name: "assets/tiles/72006.jpg",
         num: "#72006",
-        images:[{
+        images: [{
           name: "assets/tiles/72006_tileimage.jpg",
           num: "#72006"
-         },
-         {
+        },
+        {
           name: "assets/tiles/72006_tileimage.jpg",
           num: "#72006"
-         }
+        }
         ]
       },
       {
         name: "assets/tiles/72007.jpg",
         num: "#72007",
-        images:[{
+        images: [{
           name: "assets/tiles/72007_tileimage.jpg",
           num: "#72007"
-         },
-         {
+        },
+        {
           name: "assets/tiles/72007_tileimage.jpg",
           num: "#72007"
-         }
+        }
         ]
       },
       {
         name: "assets/tiles/72008.jpg",
         num: "#72008",
-        images:[{
+        images: [{
           name: "assets/tiles/72008_tileimage.jpg",
           num: "#72008"
-         },
-         {
+        },
+        {
           name: "assets/tiles/72008_tileimage.jpg",
           num: "#72008"
-         }
+        }
         ]
       }
       ],
-     
+
       this.matt = [{
         name: "assets/tiles/96014.jpg",
         num: "#96014",
-        images:[{
+        images: [{
           name: "assets/tiles/96014_tile.jpg",
           num: "#96014"
-         },
-         {
+        },
+        {
           name: "assets/tiles/96014_tile.jpg",
           num: "#96014"
-         }
+        }
         ]
-        
+
       },
       {
         name: "assets/tiles/96019.jpg",
         num: "#96019",
-        images:[{
+        images: [{
           name: "assets/tiles/96019_tiles.jpg",
           num: "#96019"
         },
@@ -549,7 +549,7 @@ export class TilesPageComponent implements OnInit {
       {
         name: "assets/tiles/96029.jpg",
         num: "#96029",
-        images:[{
+        images: [{
           name: "assets/tiles/96029_tiles.jpg",
           num: "#96029"
         },
@@ -561,7 +561,7 @@ export class TilesPageComponent implements OnInit {
       {
         name: "assets/tiles/96016.jpg",
         num: "#96016",
-        images:[{
+        images: [{
           name: "assets/tiles/96016_tiles.jpg",
           num: "#96016"
         },
@@ -573,7 +573,7 @@ export class TilesPageComponent implements OnInit {
       {
         name: "assets/tiles/96035.jpg",
         num: "#96035",
-        images:[{
+        images: [{
           name: "assets/tiles/96035_tiles.jpg",
           num: "#96035"
         },
@@ -585,7 +585,7 @@ export class TilesPageComponent implements OnInit {
       {
         name: "assets/tiles/96025.jpg",
         num: "#96025",
-        images:[{
+        images: [{
           name: "assets/tiles/96025_tiles.jpg",
           num: "#96025"
         },
@@ -596,9 +596,15 @@ export class TilesPageComponent implements OnInit {
       }
       ]
   }
+
+
+
   openImages(item) {
-    this.showImages = item.images;
-    console.log(this.showImages)
+    // this.showImages = item.images;
+    // console.log(this.showImages)
+    item.name = item.images[1].name;
+
   }
+
 
 }

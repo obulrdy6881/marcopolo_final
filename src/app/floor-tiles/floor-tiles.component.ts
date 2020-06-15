@@ -332,7 +332,8 @@ export class FloorTilesComponent implements OnInit {
     }]
   }
   openImages(item) {
-    this.showImages = item.images;
-    console.log(this.showImages)
+    // this.showImages = item.images;
+    // console.log(this.showImages)
+    item.name = item.images[1].name;
   }
 }
