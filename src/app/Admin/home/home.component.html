@@ -1,0 +1,68 @@
+
+<section class="grey lighten-4  h-100  navbarToggle">
+  <div class="navbarheadder grey lighten-4 z-depth-1">
+    <div class="row p-2">
+      <div class="col-5">
+        <ul class="list-group list-group-horizontal-sm border-0 headernavbar">
+          <li class="list-group-item">
+            <mdb-icon fas icon="bars" size="2x" id="Sidenavtogglebutton"></mdb-icon>
+          </li>
+        </ul>
+      </div>
+      <div class="col-7">
+        <ul class="list-group list-group-horizontal-sm border-0 headernavbar ">
+          <li class="list-group-item py-2 ml-auto">
+            <button mdbBtn type="button" size="sm" color="danger"  outline="true" mdbWavesEffect (click)="logout()">logout</button>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex">
+    <div class="sidenav bg-dark scrollbar scrollbar-grey">
+
+      <div class="pb-4 text-center">
+        <img src="assets/images/brand.png" alt="" width="80px">
+      </div>
+
+      <ul class="list-group mt-3 list-group-flush mymenu">
+        <li class="list-group-item p-0">
+          <mat-accordion>
+        <li class="list-group-item p-0" *ngFor="let item of Routs; let i = index">
+          <div class="list-group-item" *ngIf="item.subitems.length == 0" routerLink="{{item.path}}"
+            routerLinkActive="activeRoute">
+            <i [ngClass]="item.icon" class="mr-2" style="font-size: 20px;"></i> {{item.title}}
+          </div>
+          <mat-expansion-panel class="m-0 shadow-none" [expanded]="false" *ngIf="item.subitems.length != 0">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <i [ngClass]="item.icon" class="mr-3" style="font-size: 20px;"></i> {{item.title}}
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item p-0" *ngFor="let subitem of item.subitems; let k = index">
+                <div class="list-group-item" *ngIf="subitem.subitems.length == 0" routerLink="{{subitem.path}}"
+                  routerLinkActive="activeRoute">
+                  <i [ngClass]="subitem.icon" class="mr-2" style="font-size: 20px;"></i> {{subitem.title}}
+                </div>
+              </li>
+            </ul>
+          </mat-expansion-panel>
+        </li>
+        </mat-accordion>
+        </li>
+      </ul>
+
+    </div>
+    <div class="mani-Container grey lighten-4 w-100">
+      <div class="row">
+        <div class="col-md-12 p-4">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

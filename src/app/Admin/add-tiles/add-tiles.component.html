@@ -1,0 +1,55 @@
+<section>
+
+    <mat-card>
+        <mat-card-title class="text-center py-4 hexbg">Create Tile</mat-card-title>
+
+        <mat-card-body>
+            <div class="p-4">
+                <form #tileform="ngForm" novalidate>
+
+                    <div class="row">
+                        <div class="col-md-6 my-2">
+                            <label for="TileType" class="pl-3">Tile Type</label>
+                            <select class="form-control " name="TileType" [(ngModel)]="payload.TileType" required>
+                                <option value="WallTiles">Wall Tiles</option>
+                                <option value="FloorTiles">Floor Tiles</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 my-2">
+                            <label for="TileNumber" class="pl-3">Tile Number</label>
+                            <input type="number" id="TileNumber" class="form-control " name="TileNumber"
+                                [(ngModel)]="payload.TileNumber" required>
+                        </div>
+                        <div class="col-md-6 my-2">
+                            <label for="TileName" class="pl-3">Tile Name</label>
+                            <input type="text" id="TileName" class="form-control " name="TileName"
+                                [(ngModel)]="payload.TileName" >
+                        </div>
+                        <div class="col-md-6 my-2">
+                            <label for="Image" class="pl-3">Select Tile Image</label> <br>
+                            <input type="file" #file name="Image" id="Image" accept="image/*">
+                        </div>
+                        <div class="col-md-6 my-2">
+                            <label for="About" class="pl-3">About</label>
+                            <input type="text" id="About" class="form-control " name="About"
+                                [(ngModel)]="payload.About" >
+                        </div>
+                        <div class="col-md-6 my-2">
+                            <label for="Price" class="pl-3">Price</label>
+                            <input type="number" id="Price" class="form-control " name="Price"
+                                [(ngModel)]="payload.Price" >
+                        </div>
+
+                    </div>
+
+                    <button mdbBtn size="sm" class="mt-4 px-5 hexbtn roundedge" type="submit" [disabled]="!tileform.valid"
+                        (click)="Uploadpayload(file.files)">Submit</button>
+
+                </form>
+            </div>
+        </mat-card-body>
+    </mat-card>
+
+
+
+</section>

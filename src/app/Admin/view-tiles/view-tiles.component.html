@@ -1,0 +1,239 @@
+<div class="row">
+    <div class="col-md-12 pb-5">
+        <mat-card>
+            <mat-card-title class="text-center py-4 hexbg">View Tiles</mat-card-title>
+
+            <!-- <mdb-card-header class="blue lighten-4 py-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="example-container">
+                            <mat-form-field>
+                                <mat-select placeholder="Select-Category" name="CategoryId"
+                                    [(ngModel)]="Filters.CategoryId" (selectionChange)="GetData()">
+                                    <mat-option>All</mat-option>
+                                    <mat-option *ngFor="let item of Categorys" [value]="item.CategoryId">
+                                        {{item.CategoryName}}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+            </mdb-card-header> -->
+
+            <mat-card-body>
+                <div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <input type="text" class="form-control" [(ngModel)]="searchText" (keyup)="searchItems()"
+                                    id="search-input" mdbInput>
+                                <label for="search-input">Search</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+
+                            <table mdbTable #tableEl="mdbTable" hover="false" striped="true" class="mb-0">
+
+                                <thead class="sticky-top">
+                                    <tr>
+                                        <th *ngFor="let head of headElements; let i = index" [mdbTableSort]="elements"
+                                            [sortBy]="headElements[i]" scope="col"> {{head | titlecase}}
+                                            <mdb-icon fas icon="sort"></mdb-icon>
+                                        </th>
+                                        <th scope="col"> Edit/Delete/PreviewTiles </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody #row>
+                                    <tr mdbTableCol *ngFor="let item of elements; let i = index">
+                                        <th *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex"
+                                            scope="row">
+                                            {{item.S_no}}
+                                        </th>
+                                        <td
+                                            *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex">
+                                            {{item.FirstName }} {{item.TileType }}
+                                        </td>
+                                        <td
+                                            *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex">
+                                            {{item.TileName}}
+                                        </td>
+                                        <td
+                                            *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex">
+                                            <img src="{{item.Image}}" alt="img" width="80px">
+                                        </td>
+                                        <td
+                                            *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex">
+                                            {{item.Price}}
+                                        </td>
+                                        <td
+                                            *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex">
+                                            <button mdbBtn class="datatableBtn my-0 hexbtn" size="sm" type="button"
+                                                rounded="true" mdbWavesEffect
+                                                (click)="EditPop.show(); SelectEditRecord(item , 'edit')">
+                                                <mdb-icon fas icon="pencil-alt" class="smallFont"></mdb-icon>
+                                            </button>
+                                            <button mdbBtn class="datatableBtn my-0 pantonebtn" size="sm" type="button"
+                                                rounded="true" mdbWavesEffect
+                                                (click)="DeletePop.show(); SelectDeleteRecord(item)">
+                                                <mdb-icon fas icon="trash-alt"></mdb-icon>
+                                            </button>
+                                            <button mdbBtn class="datatableBtn my-0 hexbtn" size="sm" type="button"
+                                                rounded="true" mdbWavesEffect
+                                                (click)="AddRelatedTilesPop.show(); SelectEditRecord(item , 'related')">
+                                                <mdb-icon fas icon="plus"></mdb-icon>
+                                            </button>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                                <tfoot class="grey lighten-2 w-100">
+                                    <tr>
+                                        <th colspan="8">
+                                            <mdb-table-pagination [tableEl]="tableEl" paginationAlign=""
+                                                [searchDataSource]="elements">
+                                            </mdb-table-pagination>
+                                        </th>
+                                    </tr>
+                                </tfoot>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </mat-card-body>
+        </mat-card>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div mdbModal #DeletePop="mdbModal" class="modal fade" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-md  modal-dialog-centered" role="document">
+        <div class="modal-content" style="overflow:hidden">
+            <div class="modal-body p-5">
+                <div>
+                    <mdb-icon fas icon="times" class="deletevatchbtn" (click)="DeletePop.hide()"> </mdb-icon>
+                </div>
+                <div>
+                    <b class="text-uppercase">If you want to delete this record </b>
+                </div>
+            </div>
+            <div class="text-right">
+                <button type="button" mdbBtn class="waves-light pantonebtn" size="sm" (click)="DeletePop.hide()"
+                    mdbWavesEffect>No</button>
+                <button type="button" mdbBtn class="waves-light hexbtn" size="sm"
+                    (click)="DeletePop.hide(); DeleteItem()" mdbWavesEffect>yes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Edit -->
+
+<div mdbModal style="overflow-y: auto" #EditPop="mdbModal" class="modal fade" tabindex="-1" role="dialog"
+    aria-labelledby="myBasicModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="EditPop.hide()">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title w-100" id="myModalLabel">Edit Tiles
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form #FormComplete="ngForm" novalidate>
+                    <div class="row example-container">
+                        <div class="col-md-12 my-2">
+                            <label for="TileNumber" class="pl-3">Tile Number</label>
+                            <input type="number" id="TileNumber" class="form-control " name="TileNumber"
+                                [(ngModel)]="Payload.TileNumber">
+                        </div>
+                        <div class="col-md-12 my-2">
+                            <label for="TileName" class="pl-3">Tile Name</label>
+                            <input type="text" id="TileName" class="form-control " name="TileName"
+                                [(ngModel)]="Payload.TileName">
+                        </div>
+                        <div class="col-md-12 my-2">
+                            <label for="Image" class="pl-3">Select Tile Image</label> <br>
+                            <input type="file" #file name="Image" id="Image" accept="image/*">
+                        </div>
+                        <div class="col-md-12 my-2">
+                            <label for="About" class="pl-3">About</label>
+                            <input type="text" id="About" class="form-control " name="About"
+                                [(ngModel)]="Payload.About">
+                        </div>
+                        <div class="col-md-12 my-2">
+                            <label for="Price" class="pl-3">Price</label>
+                            <input type="number" id="Price" class="form-control " name="Price"
+                                [(ngModel)]="Payload.Price">
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button mdbBtn type="button" gradient="blue" rounded="true" mdbWavesEffect
+                    (click)="EditPop.hide(); UpdateItem(file.files)">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div mdbModal style="overflow-y: auto" #AddRelatedTilesPop="mdbModal" class="modal fade" tabindex="-1" role="dialog"
+    aria-labelledby="myBasicModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="AddRelatedTilesPop.hide()">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title w-100" id="myModalLabel">Add Preview Tiles
+                </h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-md-4  py-3" *ngFor="let item of RelatedTiles">
+                        <mat-card class="p-1">
+                            <mdb-icon fas icon="trash"  (click)="deleteRelatedItem(item)" class="deleteBtn red-text cursor-pointer">
+                            </mdb-icon>
+                            <img src="{{item.Image}}" alt="images" class="img-fluid" />
+                        </mat-card>
+                    </div>
+                </div>
+
+                <form #FormComplete="ngForm" novalidate>
+                    <div class="row example-container">
+                        <div class="col-md-12 my-2">
+                            <label for="Image" class="pl-3">Select Tile Image</label> <br>
+                            <input type="file" #RelatedTilefile name="Image" id="Image" accept="image/*">
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+            <div class="modal-footer">
+                <button mdbBtn type="button" gradient="blue" rounded="true" mdbWavesEffect
+                    (click)="AddRelatedTiles(RelatedTilefile.files)">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>

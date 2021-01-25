@@ -1,0 +1,61 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar ">
+    <a class="navbar-brand" href="#">
+      <img src="assets/images/MARCOPOLO_LOGO.png" class="img-fluid" width="60px">
+    </a>
+
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse " id="basicExampleNav">
+
+
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item  px-4" [ngClass]="{'activeNavLink' : ActiveNavLink == '/'}">
+            <a class="nav-link" routerLink=""> HOME
+              <span class="sr-only"></span>
+            </a>
+          </li>
+          <li class="nav-item dropdown px-4"[ngClass]="{'activeNavLink' : ActiveNavLink == '/company'}">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">ABOUT US</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" routerLink="/company">ABOUT COMPANY</a>
+              <a class="dropdown-item" routerLink="/ceo-message">CORPORATE OVERVIEW</a>
+              <a class="dropdown-item" routerLink="/products">CERTIFICATION</a>
+              <a class="dropdown-item" routerLink="/gallery">GALLERY</a>
+
+            </div>
+          </li>
+
+
+
+          <li class="nav-item dropdown px-4"[ngClass]="{'activeNavLink' : ActiveNavLink == '/types'}">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">PRODUCTS</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" routerLink="/tiles-page">WALL TILES</a>
+                <a class="dropdown-item" routerLink="/floor-tiles">FLOOR TILES</a>
+                <a class="dropdown-item" routerLink="/product-description">PRODUCT DESCRIPTION</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown px-4"[ngClass]="{'activeNavLink' : ActiveNavLink == '/calculator'}">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">TOOLS</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" routerLink="/calculator">CALCULATOR</a>
+              </div>
+            </li>
+            <li class="nav-item px-4"[ngClass]="{'activeNavLink' : ActiveNavLink == '/news'}">
+                <a class="nav-link"  routerLink="/news">NEWS & BLOG</a>
+              </li>
+              <li class="nav-item px-4"[ngClass]="{'activeNavLink' : ActiveNavLink == '/contact'}">
+                <a class="nav-link"  routerLink="/contact">CONTACT US</a>
+              </li>
+        </ul>
+      </div>
+
+  </mdb-navbar>

@@ -1,0 +1,143 @@
+
+.boxes {
+  width: 45px;
+  text-align: center;
+}
+
+.contentcards {
+  height: 150px;
+}
+
+.contentcardContent {
+  height: 80px;
+}
+
+
+::ng-deep {
+  .mat-tab-labels {
+    width: 100% !important;
+  }
+
+  .mat-tab-label {
+    margin: auto;
+    width: auto !important;
+    border: 0px solid #01305d !important;
+    border-radius: 27px !important;
+    opacity: 1 !important;
+    height: 40px !important;
+    padding: 0 30px !important;
+    min-width: auto !important; 
+  }
+
+  .mat-tab-nav-bar,
+  .mat-tab-header {
+    border-bottom: 0px solid rgba(0, 0, 0, .12) !important;
+    background: rgba(0, 0, 0, .12);
+    border-radius: 27px;
+    width: 85% !important;
+    margin: auto;
+  }
+
+  .mat-tab-label-active {
+    border: 2px solid #01305d !important;
+    background: #01305d !important;
+    color: white;
+  }
+
+  .mat-ink-bar {
+    display: none !important;
+  }
+
+
+
+  .selectview {
+    .mat-form-field-appearance-legacy .mat-form-field-underline {
+      height: 3px;
+      width: 35px;
+      background-color: #a6794a;
+    }
+
+    .mat-form-field-infix {
+      width: 145px !important;
+    }
+
+    // .mat-form-field-infix {
+    // //   width: px;
+    // }
+    .mat-select-value-text {
+      white-space: nowrap;
+      font-size: 25px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 500;
+      color: #01305d;
+    }
+
+  }
+
+
+
+
+
+  // .myslick {
+  //   .slick-slider {
+  //     width: 90%;
+  //     margin: auto;
+  //   }
+
+  //   .nav-btn {
+  //     height: 47px;
+  //     position: absolute;
+  //     width: 26px;
+  //     cursor: pointer;
+  //   }
+
+  //   .prev-slide.slick-disabled,
+  //   .next-slide.slick-disabled {
+  //     pointer-events: none;
+  //     opacity: 0.2;
+  //   }
+
+  //   .prev-slide {
+  //     position: absolute;
+  //     left: -24px;
+  //     top: 40%;
+  //     background-image: none !important;
+  //   }
+
+  //   .next-slide {
+  //     position: absolute;
+  //     right: -40px;
+  //     top: 40%;
+  //     background-image: none !important;
+  //   }
+
+  //   .prev-slide:before {
+  //     font-family: FontAwesome;
+  //     content: "\f053";
+  //     font-size: 17px;
+  //   }
+
+  //   .next-slide:before {
+  //     font-family: FontAwesome;
+  //     content: "\f054";
+  //     font-size: 17px;
+  //   }
+
+
+  // }
+
+
+
+
+
+
+}
+
+
+.timestampforVideo {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  color: white;
+}

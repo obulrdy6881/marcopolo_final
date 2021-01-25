@@ -1,0 +1,121 @@
+.sidenav {
+  width: 0px;
+  height: Calc(100vh);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  // padding: 20px;
+  z-index: 1000;
+  transition: all 0.5s;
+}
+
+.navbarheadder {
+  padding-left: 10px;
+  padding-right: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.5s;
+}
+
+.mani-Container {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 80px;
+  transition: all 0.5s;
+}
+
+
+.headernavbar {
+  .list-group-item {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.inputSearchfield {
+  border-radius: 2px;
+  padding: 20px;
+}
+
+
+
+.mymenu {
+  .list-group-item {
+    background: transparent;
+    color: white;
+    border-color: white !important;
+    cursor: pointer;
+  }
+
+  .mat-expansion-panel {
+    background: transparent !important;
+    color: white !important;
+    border: none;
+
+    .mat-expansion-panel-header {
+      padding: 0 19px !important;
+    }
+
+    .mat-expansion-panel-header-title {
+      color: white;
+
+    }
+
+    ::ng-deep {
+
+      .mat-expansion-panel-header-description,
+      .mat-expansion-indicator::after {
+        color: white !important;
+      }
+    }
+
+  }
+}
+
+
+.activeRoute {
+  color: #ffbf49 !important;
+}
+
+
+
+.ShowToggle {
+  .sidenav {
+    width: 300px;
+    padding: 20px;
+
+  }
+
+  .navbarheadder {
+    padding-left: 310px !important;
+  }
+
+  .mani-Container {
+    padding-left: 310px !important;
+  }
+}
+
+
+@media only screen and (max-width: 1366px) {
+  .sidenav {
+    width: 0px;
+    padding: 0px
+  }
+
+  .navbarheadder {
+    padding-left: 10px;
+  }
+
+  .mani-Container {
+    padding-left: 10px !important;
+  }
+
+  .ShowToggle {
+    .mani-Container {
+      padding-left: 10px !important;
+    }
+  }
+}
